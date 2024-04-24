@@ -1,0 +1,12 @@
+<div class="container">
+<div class="header p-2 m-2">
+<h1>Welcome to this fake and really poor imitation of Yelp</h1>
+</div>
+<div class="card p-2 m-2">
+<ul>
+  <% @restaurants.each do |restaurant| %>
+  <li><%= link_to restaurant.name, restaurant_path(restaurant) %></li>
+  <% end %>
+</ul>
+</div>
+</div>

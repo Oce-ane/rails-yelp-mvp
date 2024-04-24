@@ -13,3 +13,24 @@
  *= require_tree .
  *= require_self
  */
+ .container {
+  margin-top: 3rem;
+ }
+ h1, h2 {
+  text-align: start;
+  padding: 1rem;
+  color: #337ab7;
+ }
+ .card {
+  padding: 1rem;
+  margin-top: 10px;
+  box-shadow: 0 0 23px rgba(0,0,0,.2);;
+ }
+ a {
+  text-decoration: none;
+  padding: 1rem;
+  color: black;
+ }
+ .navbar {
+  background-color: #eeeeee;
+ }

@@ -1,0 +1,23 @@
+<div class="container p-2 m-2">
+  <div class="header p-2 m-2">
+    <h2><%= @restaurant.name %></h2>
+  </div>
+  <div class="card p-2 m-2">
+    <p><%= @restaurant.address %></p>
+    <p><%= @restaurant.phone_number %></p>
+    <p><%= @restaurant.category %></p>
+  </div>
+  <div class="card p-2 m-2">
+    <p><strong>Reviews</strong></p>
+    <ul class="list-group">
+      <% @restaurant.reviews.each do |review| %>
+        <li class="list-group-item">
+          <span><%= review.rating %>/5 - <%= review.content %></span>
+        </li>
+      <% end %>
+    </ul>
+    <div class="card">
+      <%= render "reviews/form", review: @review %>
+    </div>
+  </div>
+</div>
